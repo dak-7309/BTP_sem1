@@ -7,13 +7,13 @@ def draw_prediction(frame, classes, classId, conf, left, top, right, bottom,colo
 
     if classes:
         assert(classId < len(classes))
-        # label = '%s: %s' % (classes[classId], label)
     if classes[classId]=='person':
-        cv2.rectangle(frame, (left, top), (right, bottom), color)
+        cv2.rectangle(frame, (left, top), (right, bottom), color,2)
     
     if temp==False:
         text="Number of Social Distancing Violations= "+str(L)
-        cv2.putText(frame,text,(250,500),cv2.FONT_HERSHEY_COMPLEX, 0.6, (255,0,0), 1)
+        cv2.putText(frame,text,(15,frame.shape[0]-15),cv2.FONT_HERSHEY_COMPLEX, 0.6, (255,255,255), 1)
+        
 
 
 def process_frame(frame, outs, classes, confThreshold, nmsThreshold):
@@ -62,6 +62,8 @@ def process_frame(frame, outs, classes, confThreshold, nmsThreshold):
 
     temp=False
     if len(results)>=2:
+        
+
         c=np.array([r[2] for r in results ])
         d=dist.cdist(c, c, metric="euclidean")
 
@@ -81,8 +83,9 @@ def process_frame(frame, outs, classes, confThreshold, nmsThreshold):
                 color=(0,0,255)
             draw_prediction(frame, classes, classIds[ind], confidences[ind], startx, starty, endx,endy,color,temp,len(violate))
             temp=True
+    return len(violate)
 
-
+    
 
 
 

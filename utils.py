@@ -7,8 +7,8 @@ def draw_prediction(frame, classes, classId, conf, left, top, right, bottom,colo
 
     if classes:
         assert(classId < len(classes))
-    if classes[classId]=='person':
-        cv2.rectangle(frame, (left, top), (right, bottom), color,2)
+    # if classes[classId]=='person':
+    cv2.rectangle(frame, (left, top), (right, bottom), color,2)
     
     if temp==False:
         text="Number of Social Distancing Violations= "+str(L)
@@ -47,22 +47,20 @@ def process_frame(frame, outs, classes, confThreshold, nmsThreshold):
     results=[]
     for i in indices:
         i = i[0]
-        box = boxes[i]
-        x = box[0]
-        y = box[1]
-        width = box[2]
-        height = box[3]
+        if classes[classIds[i]]=="person":
+            box = boxes[i]
+            x = box[0]
+            y = box[1]
+            width = box[2]
+            height = box[3]
+            centerx=int(x+width/2)
+            centery=int(y+height/2)
+            r=(i,(x,y,x+width,y+height),(centerx,centery))
+            results.append(r)
         
-        centerx=int(x+width/2)
-        centery=int(y+height/2)
-        r=(i,(x,y,x+width,y+height),(centerx,centery))
-        results.append(r)
-        
-
 
     temp=False
     if len(results)>=2:
-        
 
         c=np.array([r[2] for r in results ])
         d=dist.cdist(c, c, metric="euclidean")

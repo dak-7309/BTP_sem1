@@ -15,7 +15,7 @@ def draw_prediction(frame, classes, classId, conf, left, top, right, bottom,colo
 
     if temp==False:
         text="Number of Social Distancing Violations= "+str(L)
-        cv2.putText(frame,text,(15,frame.shape[0]-15),cv2.FONT_HERSHEY_COMPLEX, 0.6, (0,255,0), 1)
+        cv2.putText(frame,text,(15,frame.shape[0]-15),cv2.FONT_HERSHEY_COMPLEX, 0.4, (0,255,0), 1)
         
 
 
@@ -98,7 +98,8 @@ def process_frame(frame, outs, classes, confThreshold, nmsThreshold):
 
         for xx in range(len(distances_list)):
             label=("Distance from "+str(distances_list[xx][0])+" to "+ str(distances_list[xx][1])+" = "+str(distances_list[xx][2])+"ft")
-            cv2.putText(frame,label,(15,20+(25*xx)),cv2.FONT_HERSHEY_COMPLEX, 0.6,(0,255,0), 1)
+            cv2.putText(frame,label,(15,20+(15*xx)),cv2.FONT_HERSHEY_COMPLEX, 0.4,(0,255,0), 1)
+            
 
 
     return len(violate)

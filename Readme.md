@@ -84,72 +84,72 @@ Figure 6: Red spots due to multiple breaches
 
 Figure 7:Monitoring social distancing with person detection and tracking
 
-__Deep learning based framework__
+- Deep learning based framework
 
-__YOLO v3 object detection model__
+- YOLO v3 object detection model
 
-__Deepsort Algorithm with bounding boxes__
+- Deepsort Algorithm with bounding boxes
 
-__Further compared with faster region\-based CNN and SNN__
+- Further compared with faster region\-based CNN and SNN
 
 # Methodology
 
-# Flow Chart
+### Flow Chart
 
 <img src="img\BTP_Presentation10.png" width=500px />
 
 Figure 8: Approach shown by diagram
 
-# RaspberryPi4
+### RaspberryPi4
 
 <img src="img\BTP_Presentation11.jpg" width=500px />
 
 Figure 9: RPi4 Architecture
 
-# Libraries for Object detection
+### Libraries for Object detection
 
-# Custom built library inspired by Pixellib
+##### Custom built library inspired by Pixellib
 
 <img src="img\BTP_Presentation12.jpg" width=500px />
 
-__Open\-source Computer Vision Library \(obtained from GitHub\)__
-
-__Performs instance segmentation of objects__
-
-__Deep Learning Mask R\-CNN models to obtain and distinguish between 80 types of objects present in the pre\-__
-
-__trained Coco dataset\.__
-
 Figure 10: Monitoring social distancing with Pixellib
 
-# YOLO v3, v4
+- Open\-source Computer Vision Library \(obtained from GitHub\)
+
+- Performs instance segmentation of objects
+
+- Deep Learning Mask R\-CNN models to obtain and distinguish between 80 types of objects present in the pre\-trained Coco dataset\.
+
+##### YOLO v3, v4
 
 <img src="img\BTP_Presentation13.png" width=500px />
 
 Figure 11: Average Precision comparisons for different architectures
 
-# Object Detection using YOLO
-
-# YOLO v3,v4 Architecture
+##### YOLO v3,v4 Architecture
 
 <img src="img\BTP_Presentation14.png" width=500px />
 
 Figure 12: One stage detector architecture
 
-# Pairwise Euclidean Distance Calculation
-Distance Mapping
-
-# Euclidean Distance
+### Euclidean Distance
 
 <img src="img\BTP_Presentation15.png" width=500px />
 
-# Mapping distance using bounding boxes
+### Mapping distance using bounding boxes
 
 <img src="img\BTP_Presentation16.png" width=62px />
 
-__We know that the average human height is 5\.5 ft\(~165cm\) and we mapped this distance to the height of every bounding box\, which gives us a relation between the pixel distance throughout the frame and the real distance\.__
+We know that the average human height is 5\.5 ft\(~165cm\) and we mapped this distance to the height of every bounding box\, which gives us a relation between the pixel distance throughout the frame and the real distance\.
 
-__Let height of bounding box be h’__  __True height h=165cm__  __i\.e\. h=165cm \-> h’__  __=> h=1cm \-> h’/165__  __=> h=182\.8cm \->__  __\(h’/165\)\*182\.8__  __\, where 182\.8cm= 6ft\, our threshold for social distancing__
+Let height of bounding box be h’
+
+True height h = 165cm
+i\.e\. h=165cm \-> h’
+=> h=1cm \-> h’/165
+=> h=182\.8cm \->
+\(h’/165\)\*182\.8
+\, where 182\.8cm= 6ft\, our threshold for social distancing
 
 Figure 13: Bounding box
 

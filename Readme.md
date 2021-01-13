@@ -2,8 +2,6 @@
 
 <span style="color:#FFFFFF">Aayush Gupta | Daksh Thapar</span>
 
-<span style="color:#FFFFFF">M\-20\-130</span>
-
 # COVID-19
 
 <img src="img\BTP_Presentation0.png" width=500px />
@@ -18,35 +16,33 @@ Figure 1: COVID\-19 figures worldwide\, from Wikipedia
 
 Figure 2: Effect of social distancing and other measures on curve of COVID\-19 cases by CDC
 
-# Motivation for Project
-
 # State of the Art
 
-# Camio - Social Distancing & Mask Detection
+### Camio - Social Distancing & Mask Detection
 
 <img src="img\BTP_Presentation3.png" width=500px />
 
-AI
-
-ML
-
-Virtual 3D floor\-plan grid\- movement
-
-Personalized Alerts
-
 Figure 3: Social Distancing & Mask Detection using Camio
+
+- AI
+
+- ML
+
+- Virtual 3D floor\-plan grid\- movement
+
+- Personalized Alerts
 
 # FebriEye, Vehant Technologies
 
 <img src="img\BTP_Presentation4.jpg" width=424px />
 
-AI based Thermal Temperature Monitoring System
+- AI based Thermal Temperature Monitoring System
 
-Non\-Contact Detection
+- Non\-Contact Detection
 
-Thermal Camera
+- Thermal Camera
 
-Real time alerts
+- Real time alerts
 
 <img src="img\BTP_Presentation5.png" width=500px />
 

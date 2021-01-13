@@ -1,4 +1,4 @@
-<span style="color:#FFFFFF"> __Smart Camera for Enforcing Social Distancing__ </span>
+<span style="color:#FFFFFF"> # Smart Camera for Enforcing Social Distancing </span>
 
 <span style="color:#FFFFFF">Aayush Gupta | Daksh Thapar</span>
 
@@ -140,22 +140,25 @@ Figure 12: One stage detector architecture
 
 <img src="img\BTP_Presentation16.png" width=62px />
 
+Figure 13: Bounding box
+
 We know that the average human height is 5\.5 ft\(~165cm\) and we mapped this distance to the height of every bounding box\, which gives us a relation between the pixel distance throughout the frame and the real distance\.
 
 Let height of bounding box be h’
 
 True height h = 165cm
+
 i\.e\. h=165cm \-> h’
+
 => h=1cm \-> h’/165
-=> h=182\.8cm \->
-\(h’/165\)\*182\.8
-\, where 182\.8cm= 6ft\, our threshold for social distancing
 
-Figure 13: Bounding box
+=> h=182\.8cm \-> \(h’/165\)\*182\.8
 
-# Database Management
+where 182\.8cm= 6ft\, our threshold for social distancing
 
-__Here is one instance of a file name containing frame of violation:__
+### Database Management
+
+Here is one instance of a file name containing frame of violation:
 
 <img src="img\BTP_Presentation17.png" width=500px />
 
@@ -165,7 +168,7 @@ Figure 14: Suitable format for saving snapshot
 
 # Experiments
 
-# Custom built library inspired by Pixellib
+### Custom built library inspired by Pixellib
 
 <img src="img\BTP_Presentation19.png" width=500px />
 
@@ -175,32 +178,27 @@ Figure 15: Original Image
 
 Figure 16: Final Image
 
-# YOLO based detection
-(3 Scenarios)
+### YOLO based detection(3 Scenarios)
 
-# Scenario 1 (outdoor, natural illumination)
+##### Scenario 1 (outdoor, natural illumination)
 
 <img src="img\BTP_Presentation21.png" width=500px />
 
 Figure 17: Original Image
 
-# Mask- RCNN model, detecting humans
-
-# Bounding Boxes
+##### Bounding Boxes
 
 <img src="img\BTP_Presentation22.png" width=500px />
 
 Figure 18: Detected humans and applied bounding boxes
 
-# Creating Distance Mapping
-
-# Pairwise Distance Calculation
+##### Pairwise Distance Calculation
 
 <img src="img\BTP_Presentation23.png" width=277px />
 
-Displayed at the top left of the frame during runtime\, contains pairwise euclidean distances for all pairs that are violating social distancing\, the persons are identified by unique “ids”
-
 Figure 19: Pairwise distances
+
+Displayed at the top left of the frame during runtime\, contains pairwise euclidean distances for all pairs that are violating social distancing\, the persons are identified by unique “ids”
 
 Displayed at the bottom left of the frame during runtime\, depicts the total number of social distancing violations
 
@@ -208,19 +206,19 @@ Displayed at the bottom left of the frame during runtime\, depicts the total num
 
 Figure 20: Number of violations
 
-# Comparing Distances with 6ft
+##### Comparing Distances with 6ft
 
 <img src="img\BTP_Presentation25.png" width=500px />
 
 Figure 21: Final Image
 
-# Storing frames in Database, Buzzer
+### Storing frames in Database, Buzzer
 
 <img src="img\BTP_Presentation26.png" width=500px />
 
 Figure 22: Snapshot saved in directory in desired format
 
-# Recap of steps with Scenario 1 (YOLOv4)
+### Recap of steps with Scenario 1 (YOLOv4)
 
 <img src="img\BTP_Presentation27.png" width=500px />
 
@@ -250,7 +248,7 @@ Figure 26: Human detection and bounding boxes
 
 Figure 27: Final Image
 
-# Scenario 3 (indoor, artificial illumination)
+### Scenario 3 (indoor, artificial illumination)
 
 <img src="img\BTP_Presentation35.jpg" width=500px />
 
@@ -270,7 +268,7 @@ Figure 31: Final Image 2
 
 # Results
 
-# Custom built library inspired by Pixellib
+### Custom built library inspired by Pixellib
 
 <img src="img\BTP_Presentation39.png" width=500px />
 
@@ -282,23 +280,23 @@ Clear inaccuracies in violation detection for social distancing
 
 Figure 32: Final Image using Pixellib
 
-# Scenario 1: YOLOv3 vs YOLOv4
-
-# Scenario 1: YOLOv3
+### Scenario 1: YOLOv3
 
 <img src="img\BTP_Presentation40.png" width=500px />
 
+Figure 33: Final Image using YOLOv3
+
 Average time per frame = __0\.2476s__
 
-__Number of social distancing violations reported =__  __2__
+Number of social distancing violations reported =  __2__
 
 Distance from person 3 to 5=2\.07ft
 
 2\.07ft < 6ft=> <span style="color:#FF0000">Violation</span> of Social distancing
 
-Figure 33: Final Image using YOLOv3
-
 <img src="img\BTP_Presentation41.png" width=500px />
+
+Figure 34: Final Image using YOLOv4
 
 Average time per frame = __0\.15527s__
 
@@ -312,11 +310,11 @@ Distance from person 2 to 6 = 1\.86ft
 
 1\.86ft < 6ft=> <span style="color:#FF0000">Violation</span> of Social distancing
 
-Figure 34: Final Image using YOLOv4
-
-# Scenario 2: YOLOv4
+### Scenario 2: YOLOv4
 
 <img src="img\BTP_Presentation42.png" width=500px />
+
+Figure 35: Final Image using YOLOv4
 
 Average time per frame = __0\.21384s__
 
@@ -330,8 +328,6 @@ Distance from person 7 to 12 = 4\.20ft
 
 4\.20ft < 6ft=> <span style="color:#FF0000">Violation</span> of Social distancing
 
-Figure 35: Final Image using YOLOv4
-
 <img src="img\BTP_Presentation43.jpg" width=500px />
 
 True distance between humans= 6\.25ft
@@ -342,13 +338,13 @@ Figure 36: Original Image using YOLOv4
 
 <img src="img\BTP_Presentation45.jpg" width=500px />
 
-__Number of violations=__  __0__
+Number of violations=  __0__
 
-__True distance between humans= 6\.25ft__
+True distance between humans= 6\.25ft
 
-__Estimated distance between humans= 6\.31ft__
+Estimated distance between humans= 6\.31ft
 
-__6\.31ft > 6ft__  __=>__  <span style="color:#00FF00">Not a violation</span>  __of social distancing__
+6\.31ft > 6ft=>  <span style="color:#00FF00">Not a violation</span>  of social distancing
 
 <img src="img\BTP_Presentation46.png" width=500px />
 
@@ -356,13 +352,13 @@ Figure 37: Human detection and bounding boxes
 
 <img src="img\BTP_Presentation47.jpg" width=500px />
 
-__Number of violations=__  __2__
+Number of violations=  __2__
 
-__True distance between humans= 5\.5ft__
+True distance between humans= 5\.5ft
 
-__Estimated distance between humans= 5\.55ft__
+Estimated distance between humans= 5\.55ft
 
-__5\.55ft < 6ft__  __=>__  <span style="color:#FF0000">V</span>  <span style="color:#FF0000">iolation</span>  __of social distancing__
+5\.55ft < 6ft=>  <span style="color:#FF0000">Violation</span>  of social distancing
 
 <img src="img\BTP_Presentation48.png" width=500px />
 
@@ -370,31 +366,17 @@ Figure 38: Final image at 5\.5ft
 
 <img src="img\BTP_Presentation49.jpg" width=500px />
 
-__Number of violations=__  __2__
+Number of violations=  __2__
 
-__True distance between humans= 3\.25ft__
+True distance between humans= 3\.25ft
 
-__Estimated distance between humans= 3\.52ft__
+Estimated distance between humans= 3\.52ft
 
-__3\.52ft < 6ft__  __=>__  <span style="color:#FF0000">Violation</span>  __of social distancing__
+3\.52ft < 6ft=>  <span style="color:#FF0000">Violation</span>  of social distancing
 
 <img src="img\BTP_Presentation50.png" width=500px />
 
 Figure 39: Final image at 3\.25ft
-
-# Demonstration Video 1
-
-<img src="img\BTP_Presentation51.png" width=240px />
-
-<img src="img\BTP_Presentation52.png" width=240px />
-
-<img src="img\BTP_Presentation53.png" width=240px />
-
-<img src="img\BTP_Presentation54.png" width=240px />
-
-<img src="img\BTP_Presentation55.png" width=240px />
-
-<img src="img\BTP_Presentation56.png" width=240px />
 
 # Challenges and Limitations
 
@@ -405,8 +387,3 @@ Figure 40: Future Hardware Prospective
 <img src="img\BTP_Presentation58.png" width=500px />
 
 Figure 41:Transformation of a 3D point on the image plane to the 2D coordinates
-
-# Future prospects
-
-<img src="img\BTP_Presentation59.jpg" width=500px />
-

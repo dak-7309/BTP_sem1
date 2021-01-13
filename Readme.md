@@ -1,4 +1,4 @@
-<span style="color:#FFFFFF"> # Smart Camera for Enforcing Social Distancing </span>
+# Smart Camera for Enforcing Social Distancing
 
 <span style="color:#FFFFFF">Aayush Gupta | Daksh Thapar</span>
 

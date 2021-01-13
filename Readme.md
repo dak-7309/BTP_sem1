@@ -36,6 +36,10 @@ Figure 3: Social Distancing & Mask Detection using Camio
 
 <img src="img\BTP_Presentation4.jpg" width=424px />
 
+<img src="img\BTP_Presentation5.png" width=500px />
+
+Figure 4: Social Distancing by FebriEye
+
 - AI based Thermal Temperature Monitoring System
 
 - Non\-Contact Detection
@@ -43,10 +47,6 @@ Figure 3: Social Distancing & Mask Detection using Camio
 - Thermal Camera
 
 - Real time alerts
-
-<img src="img\BTP_Presentation5.png" width=500px />
-
-Figure 4: Social Distancing by FebriEye
 
 # Deep Learning based Safe Social Distancing and Face Mask Detection in Public Areas for COVID-19 Safety Guidelines Adherence (Shashi Yadav, July 2020)
 

@@ -52,15 +52,15 @@ Figure 4: Social Distancing by FebriEye
 
 <img src="img\BTP_Presentation6.png" width=385px />
 
-__Computer Vision based approach__
-
-__Real\-Time automated monitoring__
-
-__Implementing model on RaspberryPi4__
-
-__Three aspects: detection\, tracking\, and validation__
-
 Figure 5:Safe Social Distancing and Face Mask Detection in Public Areas
+
+- Computer Vision based approach
+
+- Real\-Time automated monitoring
+
+- Implementing model on RaspberryPi4
+
+- Three aspects: detection\, tracking\, and validation
 
 # DeepSOCIAL: Social Distancing Monitoring and Infection Risk Assessment in COVID-19 Pandemic
 

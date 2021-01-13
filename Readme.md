@@ -32,7 +32,7 @@ Figure 3: Social Distancing & Mask Detection using Camio
 
 - Personalized Alerts
 
-# FebriEye, Vehant Technologies
+### FebriEye, Vehant Technologies
 
 <img src="img\BTP_Presentation4.jpg" width=424px />
 
@@ -48,7 +48,7 @@ Figure 4: Social Distancing by FebriEye
 
 - Real time alerts
 
-# Deep Learning based Safe Social Distancing and Face Mask Detection in Public Areas for COVID-19 Safety Guidelines Adherence (Shashi Yadav, July 2020)
+### Deep Learning based Safe Social Distancing and Face Mask Detection in Public Areas for COVID-19 Safety Guidelines Adherence (Shashi Yadav, July 2020)
 
 <img src="img\BTP_Presentation6.png" width=385px />
 
@@ -62,25 +62,27 @@ Figure 5:Safe Social Distancing and Face Mask Detection in Public Areas
 
 - Three aspects: detection\, tracking\, and validation
 
-# DeepSOCIAL: Social Distancing Monitoring and Infection Risk Assessment in COVID-19 Pandemic
+### DeepSOCIAL: Social Distancing Monitoring and Infection Risk Assessment in COVID-19 Pandemic
 
 <img src="img\BTP_Presentation7.png" width=469px />
-
-__Deep Neural Network\-Based model__
-
-__Automated people detection\, tracking__
-
-__Euclidean pairwise distances__
-
-__YOLOv4\-based framewor__  __k__
 
 <img src="img\BTP_Presentation8.png" width=469px />
 
 Figure 6: Red spots due to multiple breaches
 
-# Monitoring COVID-19 social distancing with person detection and tracking via fine-tuned YOLOv3 and Deepsort techniques (Narinder Singh Punn, Sanjay Kumar Sonbhadra and Sonali Agarwal)
+- Deep Neural Network\-Based model
+
+- Automated people detection\, tracking
+
+- Euclidean pairwise distances
+
+- YOLOv4\-based framework
+
+### Monitoring COVID-19 social distancing with person detection and tracking via fine-tuned YOLOv3 and Deepsort techniques (Narinder Singh Punn, Sanjay Kumar Sonbhadra and Sonali Agarwal)
 
 <img src="img\BTP_Presentation9.png" width=500px />
+
+Figure 7:Monitoring social distancing with person detection and tracking
 
 __Deep learning based framework__
 
@@ -89,8 +91,6 @@ __YOLO v3 object detection model__
 __Deepsort Algorithm with bounding boxes__
 
 __Further compared with faster region\-based CNN and SNN__
-
-Figure 7:Monitoring social distancing with person detection and tracking
 
 # Methodology
 

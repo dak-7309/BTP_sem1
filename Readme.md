@@ -272,13 +272,13 @@ Figure 31: Final Image 2
 
 <img src="img\BTP_Presentation39.png" width=500px />
 
+Figure 32: Final Image using Pixellib
+
 Average time per frame = __15\.0029s__
 
 Well structured bounding boxes
 
 Clear inaccuracies in violation detection for social distancing
-
-Figure 32: Final Image using Pixellib
 
 ### Scenario 1: YOLOv3
 
